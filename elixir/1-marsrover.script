@@ -1,0 +1,38 @@
+Elixir MarsRover kata script
+============================
+
+Intro
+-----
+
+: Start on entry emacs screen
+Hello everyone,
+
+today we are going to be working on the Marsrover kata ... on Elixir.
+
+A few notes before we start:
+- I'm not an Elixir expert. Someone more knowledgeable of the language could point to doing different things.
+- I will be using TDD and Outside-In
+- I want to demonstrate the power of using data manipulation on the solution of the problem
+
+
+$ mix new marsrover
+
+Mix is the tool that allow us to create, test and compile elixir applications
+
+-> Open marsrover_test.exs
+Conventions module name MarsroverTest, filename marsrover_test
+
+
+-> Eliminate doctest from marsrover_test.exs
+Not needed for what we are going to do.
+-> Eliminate @moduledoc and @doc from marsrover.ex
+=> M-g M-g 2 RET
+=> C-Space
+=> M-g M-g 15 RET
+=> C-w
+-> Add "Basic Acceptance Test"
+=> M-g M-g 2
+
+
+
+

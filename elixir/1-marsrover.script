@@ -78,6 +78,8 @@ All three steps that we have talked about can become three functions. Then we ca
 
 Now testing fails because we are missing these new functions. Remember that all of them are going to receive a parameter, that being the data coming from the left of the pipe. Furthermore, like in all functional languages, a function always returns the falue of the last expression. And if there is no expression, Elixir will return `nil`
 
-If we run the test, now we have the assertiong failure and some warning. For elixir, if you add an underscore before the name of a parameter the compiler will now that the parameter is not being used and will not give you a warning. In fact, we could have just the underscore with no name. So we make the last function return "1 3 N\5 1 E"
+If we run the test, now we have the assertiong failure and some warning. For elixir, if you add an underscore before the name of a parameter the compiler will now that the parameter is not being used and will not give you a warning. In fact, we could have just the underscore with no name. So we make the last function return "1 3 N\5 1 E". Remember
 
-Now we have some passing test. But let's start actually to do some more interesting stuff.
+Now we have some passing test. But let's start actually to do some more interesting stuff. We could start with any of the three methods. But we will go with the `parse` function.
+
+Let's going to create a test for it. When creating the expected output we have to think this: It is Elixir, a functional language (not hybrid), and there are no objects. We can use maps to indicate a strong relationship between some elements. We can also use structs, which are a special type of map (something we would look into as well, depending on the refactoring)
